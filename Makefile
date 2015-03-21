@@ -24,7 +24,7 @@ clean:
 	$(LAME) WAV/$*.wav MP3/$*.mp3
 
 %.flac: %.wav
-	(call FLAC,$*)
+	$(call FLAC,$*)
 
 %.mid: Parts/%.ily Parts/$(join $(if $(findstring drums, $<), drums_), midi.ily)
 	cat $< $(addsuffix midi.ily, $(join Parts/, $(if $(findstring drums, $<), drums_))) | \
