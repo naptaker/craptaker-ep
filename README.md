@@ -7,8 +7,17 @@ The [Minneapolis][1] side of the 2015 [Naptaker][1] LP.
 
 # Track List
 - Kayla
-  - [MIDI](MIDI/kayla.mid)
-  - [PDF](PDF/kayla.pdf?raw=true)
+  - Bass
+    - [MIDI](MIDI/kayla-bass.mid?raw=true) |
+    [MP3](MP3/kayla-bass.mp3?raw=true) |
+	[PDF](PDF/kayla-bass.pdf?raw=true) |
+	[PNG](PNG/kayla-bass.png?raw=true)
+  - Guitar
+    - [MIDI](MIDI/kayla-guitar.mid?raw=true) |
+    [MP3](MP3/kayla-guitar.mp3?raw=true) |
+    [PDF](PDF/kayla-guitar.pdf?raw=true) |
+	[PNG](PNG/kayla-guitar.png?raw=true)
+
 
 # Personnel
 - :fish: Sam Albers
