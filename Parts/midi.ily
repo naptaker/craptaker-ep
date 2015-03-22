@@ -7,5 +7,14 @@
       << \global \midiNotes >>
     }
   >>
-  \midi {}
+  \midi {
+    \context {
+      \Staff
+      \remove "Staff_performer"
+    }
+    \context {
+      \Voice
+      \consists "Staff_performer"
+    }
+  } 
 }

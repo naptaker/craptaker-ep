@@ -45,5 +45,14 @@
       << \global \unfoldRepeats \articulate \transpose c c, \bassNotes >>
     }
   >>
-  \midi {}
+  \midi {
+    \context {
+      \Staff
+      \remove "Staff_performer"
+    }
+    \context {
+      \Voice
+      \consists "Staff_performer"
+    }
+  }
 }
