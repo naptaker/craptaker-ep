@@ -1,4 +1,4 @@
-FLAC       = flac -f --best WAV/$1.wav -o FLAC/$1.flac
+FLAC       = flac -f --best Output/WAV/$1.wav -o Output/FLAC/$1.flac
 FLUIDSYNTH = fluidsynth -F
 LAME       = lame --cbr -b 320
 LILYPOND   = lilypond --silent --include=Parts -ddelete-intermediate-files \
@@ -11,7 +11,7 @@ all: kayla-bass.mp3 kayla-bass.pdf \
 	 kayla_score
 
 clean:
-	rm -f FLAC/* MIDI/* MP3/* PDF/* WAV/*
+	rm -f Output/FLAC/* /Output/MIDI/* Output/MP3/* Output/PDF/* Output/WAV/*
 
 %_score: Globals/%.ily Headers/%.ily Notes/%-*.ily
 	cat Common/preamble.ily \
@@ -19,9 +19,9 @@ clean:
 	    Notes/$*-?(bass|guitar).ily \
 	    Scores/layout.ily | \
 	    $(LILYPOND) -o $* -
-	test -f $*.pdf && mv $$_ PDF/; test -f $*.mid && mv $$_ MIDI/
-	$(FLUIDSYNTH) WAV/$*.wav "$(SOUNDFONT)" MIDI/$*.mid
-	$(LAME) WAV/$*.wav MP3/$*.mp3
+	test -f $*.pdf && mv $$_ Output/PDF/; test -f $*.mid && mv $$_ Output/MIDI/
+	$(FLUIDSYNTH) Output/WAV/$*.wav "$(SOUNDFONT)" Output/MIDI/$*.mid
+	$(LAME) Output/WAV/$*.wav Output/MP3/$*.mp3
 
 %.flac: %.wav
 	$(call FLAC,$*)
@@ -29,14 +29,14 @@ clean:
 %.mid: Parts/%.ily Parts/$(join $(if $(findstring drums, $<), drums_), midi.ily)
 	cat $< $(addsuffix midi.ily, $(join Parts/, $(if $(findstring drums, $<), drums_))) | \
 	$(LILYPOND) -o $* -
-	test -f $*.mid && mv $$_ MIDI/
+	test -f $*.mid && mv $$_ Output/MIDI/
 
 %.mp3: %.wav
-	$(LAME) WAV/$*.wav MP3/$*.mp3
+	$(LAME) Output/WAV/$*.wav Output/MP3/$*.mp3
 
 %.pdf: Parts/%.ily Parts/layout.ily
 	cat $< $(addsuffix layout.ily, $(join Parts/, $(if $(findstring drums, $<), drums_))) | \
-	$(LILYPOND) -o $* -; test -f $*.pdf && mv $$_ PDF/
+	$(LILYPOND) -o $* -; test -f $*.pdf && mv $$_ Output/PDF/
 
 %.wav: %.mid
-	$(FLUIDSYNTH) WAV/$@ "${SOUNDFONT}" MIDI/$*.mid;
+	$(FLUIDSYNTH) Output/WAV/$@ "${SOUNDFONT}" Output/MIDI/$*.mid;
