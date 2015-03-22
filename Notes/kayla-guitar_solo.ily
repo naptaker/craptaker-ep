@@ -1,5 +1,4 @@
-\set Staff.midiInstrument = #"electric guitar (clean)"
-
+\fuzzOff
 b'4 b8 b4\prall b8 b b |
 b8 b:16 b8 b4\prall b8 b b |
 b8 b:16 b8 b4\prall b8 b b |

@@ -1,7 +1,6 @@
 instrumentName = "Guitar"
 
 guitarNotes = \relative c {
-  \set Staff.midiInstrument = #"distorted guitar"
   \include "../Notes/kayla-guitar_intro.ily"
   \include "../Notes/kayla-guitar_verse.ily"
   \repeat volta 2 {

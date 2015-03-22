@@ -1,4 +1,4 @@
-\set Staff.midiInstrument = #"electric guitar (clean)"
+\fuzzOff
 \arpeggioArrowUp
 \repeat unfold 2 {
   b4 \xOn <b fis' b>8 \xOff <b fis' b dis fis b>4\arpeggio cis''8 b \xOn <g, b> \xOff
