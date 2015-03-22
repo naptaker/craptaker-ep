@@ -1,5 +1,8 @@
 \include "articulate.ly"
 
+fuzzOn = \set midiInstrument = #"overdriven guitar"
+fuzzOff = \set midiInstrument = #"electric guitar (clean)"
+
 xOn  = \deadNotesOn
 xOff = \deadNotesOff
 
