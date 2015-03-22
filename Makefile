@@ -1,4 +1,4 @@
-FLAC       = flac --best WAV/$1.wav -o FLAC/$1.flac
+FLAC       = flac -f --best WAV/$1.wav -o FLAC/$1.flac
 FLUIDSYNTH = fluidsynth -F
 LAME       = lame --cbr -b 320
 LILYPOND   = lilypond --silent --include=Parts -ddelete-intermediate-files \
