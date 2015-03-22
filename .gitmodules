@@ -1,0 +1,4 @@
+[submodule "Output"]
+	path = Output
+	url = git@github.com:naptaker/craptaker.git
+	branch = output
