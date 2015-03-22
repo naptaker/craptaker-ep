@@ -1,7 +1,8 @@
 \fuzzOff
 b'4 b8 b4\prall b8 b b |
-b8 b:16 b8 b4\prall b8 b b |
-b8 b:16 b8 b4\prall b8 b b |
+\repeat percent 2 {
+  b8 b:16 b8 b4\prall b8 b b |
+}
 b8( ais) ais ais ais( b) b ais |
 b4 dis8 b4 dis4 b8 ~ |
 b8 b dis b b dis b( ais) |
