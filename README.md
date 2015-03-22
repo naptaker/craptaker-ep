@@ -8,15 +8,15 @@ The [Minneapolis][1] side of the 2015 [Naptaker][1] LP.
 # Track List
 - Kayla
   - Bass
-    - [MIDI](MIDI/kayla-bass.mid?raw=true) |
-    [MP3](MP3/kayla-bass.mp3?raw=true) |
-	[PDF](PDF/kayla-bass.pdf?raw=true) |
-	[PNG](PNG/kayla-bass.png?raw=true)
+    - [MIDI](https://github.com/naptaker/craptaker/blob/output/MIDI/kayla-bass.mid?raw=true) |
+    [MP3](https://github.com/naptaker/craptaker/blob/output/MP3/kayla-bass.mp3?raw=true) |
+	[PDF](https://github.com/naptaker/craptaker/blob/output/PDF/kayla-bass.pdf?raw=true) |
+	[PNG](https://github.com/naptaker/craptaker/blob/output/PNG/kayla-bass.png?raw=true)
   - Guitar
-    - [MIDI](MIDI/kayla-guitar.mid?raw=true) |
-    [MP3](MP3/kayla-guitar.mp3?raw=true) |
-    [PDF](PDF/kayla-guitar.pdf?raw=true) |
-	[PNG](PNG/kayla-guitar.png?raw=true)
+    - [MIDI](https://github.com/naptaker/craptaker/blob/output/MIDI/kayla-guitar.mid?raw=true) |
+    [MP3](https://github.com/naptaker/craptaker/blob/output/MP3/kayla-guitar.mp3?raw=true) |
+    [PDF](https://github.com/naptaker/craptaker/blob/output/PDF/kayla-guitar.pdf?raw=true) |
+	[PNG](https://github.com/naptaker/craptaker/blob/output/PNG/kayla-guitar.png?raw=true)
 
 
 # Personnel
