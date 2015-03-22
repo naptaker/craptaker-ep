@@ -6,6 +6,7 @@
     << \global \partNotes >>
   }
   \layout {
+    indent = 0\in
     \context {
       \Score
       % \override NonMusicalPaperColumn #'line-break-permission = ##f
