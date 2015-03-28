@@ -2,3 +2,6 @@
 	path = Output
 	url = git@github.com:naptaker/craptaker.git
 	branch = output
+[submodule "lalily"]
+	path = lalily
+	url = git@github.com:jpvoigt/lalily.git
