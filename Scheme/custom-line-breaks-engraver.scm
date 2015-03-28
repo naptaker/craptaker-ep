@@ -1,4 +1,4 @@
-;; Stightly tweaked from David Nalesnik's work.
+;; Slightly tweaked from David Nalesnik's work.
 ;; http://lists.gnu.org/archive/html/lilypond-user/2012-05/msg00381.html
 
 (define (custom-line-breaks-engraver bar-list)
