@@ -15,15 +15,16 @@
       \partDefaults
       << \global \clef "bass" \Key \bassNotes >>
     }
-    % \new DrumStaff {
-    %   \partDefaults
-    %   << \global
-    % 	 <<
-    % 	   \new DrumVoice \drumUpNotes
-    % 	   \new DrumVoice \drumDownNotes
-    % 	 >>
-    %    >>
-    % }
+    \new DrumStaff {
+      \partDefaults
+      <<
+        \global
+        <<
+          \new DrumVoice \drumsUpNotes
+          \new DrumVoice \drumsDownNotes
+        >>
+      >>
+    }
   >>
 
   \layout {
@@ -43,6 +44,16 @@
     }
     \new Staff {
       << \global \unfoldRepeats \articulate \transpose c c, \bassNotes >>
+    }
+    \new DrumStaff {
+      \partDefaults
+      <<
+        \global
+        <<
+          \new DrumVoice \drumsUpNotes
+          \new DrumVoice \drumsDownNotes
+        >>
+      >>
     }
   >>
   \midi {

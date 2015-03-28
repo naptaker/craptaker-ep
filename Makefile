@@ -16,7 +16,7 @@ clean:
 %_score: Globals/%.ily Headers/%.ily Notes/%-*.ily
 	cat Common/preamble.ily \
 	    Globals/$*.ily Headers/$*.ily \
-	    Notes/$*-?(bass|guitar).ily \
+	    Notes/$*-?(bass|drums|guitar).ily \
 	    Scores/layout.ily | \
 	    $(LILYPOND) -o $* -
 	test -f $*.pdf && mv $$_ Output/PDF/; test -f $*.mid && mv $$_ Output/MIDI/
@@ -26,9 +26,8 @@ clean:
 %.flac: %.wav
 	$(call FLAC,$*)
 
-%.mid: Parts/%.ily Parts/$(join $(if $(findstring drums, $<), drums_), midi.ily)
-	cat $< $(addsuffix midi.ily, $(join Parts/, $(if $(findstring drums, $<), drums_))) | \
-	$(LILYPOND) -o $* -
+%.mid: Parts/%.ily Parts/midi.ily
+	cat $< Parts/midi.ily | $(LILYPOND) -o $* -
 	test -f $*.mid && mv $$_ Output/MIDI/
 
 %.mp3: %.wav
