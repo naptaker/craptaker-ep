@@ -4,4 +4,4 @@
 	branch = output
 [submodule "lalily"]
 	path = lalily
-	url = git@github.com:jpvoigt/lalily.git
+	url = git@github.com:yurrriq/lalily.git
