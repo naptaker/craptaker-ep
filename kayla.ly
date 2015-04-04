@@ -9,6 +9,15 @@
 #(set-registry-val '(lalily person poet pre) "Words by")
 #(set-registry-val '(lalily header copyright) #{ \markup { \with-url #"http://naptakerrr.com" "Naptaker" } #})
 
+#(define mydrums '((bassdrum      default #f -3)
+                   (snare         default #f  1)
+                   (closedhihat   cross   #f  5)
+                   (halfopenhihat xcircle #f  5)
+                   (lowtom        default #f -1)
+                   (pedalhihat    cross   #f -5)
+                   (crashcymbal   cross   #f  6)
+                   (ridecymbal    cross   #f  4)))
+
 \setMusicFolder naptaker.craptaker.kayla
 
 \optionsInit opts
@@ -21,6 +30,7 @@
 \optionsAdd opts part.bass.template \Path lalily.instrument.bass-guitar
 \optionsAdd opts part.drums.template \Path lalily.drums
 \optionsAdd opts part.drums.staff-mods \with {
+  drumStyleTable = #(alist->hash-table mydrums)
   % instrumentName = "Drums"
 }
 
