@@ -1,0 +1,1 @@
+\palmMuteOn f,8 f \palmMuteOff <f c' f a> \palmMuteOn f \palmMuteOff b cis d dis |
