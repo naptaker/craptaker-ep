@@ -14,28 +14,29 @@
 \optionsInit opts
 \optionsAdd opts part.guitar.template \Path lalily.instrument.electric-guitar
 \optionsAdd opts part.guitar.staff-mods \with {
-  instrumentName = "Guitar"
+  % instrumentName = "Guitar"
   midiMaximumVolume = 0.6
   % \remove "Staff_performer"
 }
 \optionsAdd opts part.bass.template \Path lalily.instrument.bass-guitar
 \optionsAdd opts part.drums.template \Path lalily.drums
 \optionsAdd opts part.drums.staff-mods \with {
-  instrumentName = "Drums"
+  % instrumentName = "Drums"
 }
 
 \setDefaultTemplate naptaker.craptaker.kayla lalily.group #opts
 
 \paper {
   #(set-paper-size "letter" 'landscape)
+  indent = 0.0\in
   ragged-last = ##t
-  #(define fonts
-    (set-global-fonts
-      #:music "lilyjazz"
-      #:brace "lilyjazz"
-      #:roman "LilyJAZZText"
-      #:sans "LilyJAZZChord"
-      #:factor (/ staff-height pt 20)))
+  % #(define fonts
+  %   (set-global-fonts
+  %     #:music "lilyjazz"
+  %     #:brace "lilyjazz"
+  %     #:roman "LilyJAZZText"
+  %     #:sans "LilyJAZZChord"
+  %     #:factor (/ staff-height pt 20)))
 }
 
 fuzzOn = \set midiInstrument = #"overdriven guitar"
@@ -115,7 +116,7 @@ xOff = \deadNotesOff
   \stemUp
   \include "../Notes/kayla-drums-up_intro.ily"
 }
-      
+
 \putMusic drums.down \drummode {
   \voiceTwo
   \include "../Notes/kayla-drums-down_intro.ily"
