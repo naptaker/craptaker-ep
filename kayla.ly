@@ -58,7 +58,11 @@ xOff = \deadNotesOff
   \tempo 4 = 170
   \defaultTimeSignature
   \time 4/4
-  \repeat unfold 10 {
+  \repeat unfold 2 {
+    s1*8 \break
+  }
+  s1*9 \break
+  \repeat unfold 7 {
     s1*8 \break
   }
   s1*2 |
@@ -73,6 +77,10 @@ xOff = \deadNotesOff
   \repeat volta 2 {
     \include "../Notes/kayla-guitar_chorus.ily"
   }
+  \alternative {
+    { \include "../Notes/kayla-guitar_chorus_ending.ily" }
+    { \include "../Notes/kayla-guitar_chorus_ending.ily" }
+  }
   \include "../Notes/kayla-guitar_bridge.ily"
   \include "../Notes/kayla-guitar_verse.ily"
   \include "../Notes/kayla-guitar_solo.ily"
@@ -86,10 +94,15 @@ xOff = \deadNotesOff
   \repeat volta 2 {
     \include "../Notes/kayla-bass_chorus.ily"
   }
+  \alternative {
+    { \include "../Notes/kayla-bass_chorus_ending.ily" }
+    { \relative c, { \include "../Notes/kayla-bass_chorus_ending.ily" } }
+  }
   \include "../Notes/kayla-bass_bridge.ily"
   \include "../Notes/kayla-bass_verse.ily"
   \repeat unfold 2 {
     \include "../Notes/kayla-bass_chorus.ily"
+    \include "../Notes/kayla-bass_chorus_ending.ily"
   }
   \include "../Notes/kayla-bass_bridge.ily"
   \include "../Notes/kayla-bass_ending.ily"
