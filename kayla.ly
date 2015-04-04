@@ -125,11 +125,19 @@ xOff = \deadNotesOff
   \voiceOne
   \stemUp
   \include "../Notes/kayla-drums-up_intro.ily"
+  \include "../Notes/kayla-drums-up_verse.ily"
+  \include "../Notes/kayla-drums-up_chorus.ily"
+  \include "../Notes/kayla-drums-up_bridge.ily"
+  \include "../Notes/kayla-drums-up_verse.ily"
 }
 
 \putMusic drums.down \drummode {
   \voiceTwo
   \include "../Notes/kayla-drums-down_intro.ily"
+  \include "../Notes/kayla-drums-down_verse.ily"
+  \include "../Notes/kayla-drums-down_chorus.ily"
+  \include "../Notes/kayla-drums-down_bridge.ily"
+  \include "../Notes/kayla-drums-down_verse.ily"
 }
 
 \lalilyCreate
