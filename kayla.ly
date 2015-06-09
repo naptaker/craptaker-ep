@@ -129,6 +129,8 @@ xOff = \deadNotesOff
   \include "../Notes/kayla-drums-up_chorus.ily"
   \include "../Notes/kayla-drums-up_bridge.ily"
   \include "../Notes/kayla-drums-up_verse.ily"
+  % 1.5x chorus
+  % ending
 }
 
 \putMusic drums.down \drummode {
@@ -138,6 +140,8 @@ xOff = \deadNotesOff
   \include "../Notes/kayla-drums-down_chorus.ily"
   \include "../Notes/kayla-drums-down_bridge.ily"
   \include "../Notes/kayla-drums-down_verse.ily"
+  % 1.5x chorus
+  % ending
 }
 
 \lalilyCreate
