@@ -13,6 +13,11 @@ all: kayla-bass.mp3 kayla-bass.pdf \
 clean:
 	rm -f Output/FLAC/* /Output/MIDI/* Output/MP3/* Output/PDF/* Output/WAV/*
 
+lalily-%: %.ly
+	lilypond -I lalily -ddelete-intermediate-files \
+		 -djob-count=8 -dmidi-extension=mid $*
+	test -f $*.pdf && mv $$_ Output/PDF/; test -f $*.mid && mv $$_ Output/MIDI/
+
 %_score: Globals/%.ily Headers/%.ily Notes/%-*.ily
 	cat Common/preamble.ily \
 	    Globals/$*.ily Headers/$*.ily \
