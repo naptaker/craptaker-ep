@@ -5,3 +5,7 @@
 [submodule "lalily"]
 	path = lalily
 	url = git@github.com:yurrriq/lalily.git
+[submodule "lib/docker"]
+	path = lib/docker
+	url = git@github.com:yurrriq/dockerfiles.git
+	branch = lilypond
