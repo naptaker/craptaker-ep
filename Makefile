@@ -18,6 +18,11 @@ lalily-%: %.ly
 		 -djob-count=8 -dmidi-extension=mid $*
 	test -f $*.pdf && mv $$_ Output/PDF/; test -f $*.mid && mv $$_ Output/MIDI/
 
+docker-%: %.ly
+	docker run -it --rm -v $(PWD):/src/craptaker \
+		yurrriq/lilypond \
+		/bin/bash -c "cd craptaker && make lalily-"$*
+
 %_score: Globals/%.ily Headers/%.ily Notes/%-*.ily
 	cat Common/preamble.ily \
 	    Globals/$*.ily Headers/$*.ily \
