@@ -1,2 +1,17 @@
 PDF/kayla-bass.pdf filter=lfs diff=lfs merge=lfs -text
 PDF/kayla-guitar.pdf filter=lfs diff=lfs merge=lfs -text
+WAV/kayla-bass.wav filter=lfs diff=lfs merge=lfs -text
+WAV/kayla-guitar.wav filter=lfs diff=lfs merge=lfs -text
+MP3/kayla-bass.mp3 filter=lfs diff=lfs merge=lfs -text
+MP3/kayla-guitar.mp3 filter=lfs diff=lfs merge=lfs -text
+PNG/kayla-bass-0.png filter=lfs diff=lfs merge=lfs -text
+PNG/kayla-bass-1.png filter=lfs diff=lfs merge=lfs -text
+PNG/kayla-bass-2.png filter=lfs diff=lfs merge=lfs -text
+PNG/kayla-bass.png filter=lfs diff=lfs merge=lfs -text
+PNG/kayla-guitar-0.png filter=lfs diff=lfs merge=lfs -text
+PNG/kayla-guitar-1.png filter=lfs diff=lfs merge=lfs -text
+PNG/kayla-guitar-2.png filter=lfs diff=lfs merge=lfs -text
+PNG/kayla-guitar.png filter=lfs diff=lfs merge=lfs -text
+MIDI/kayla-bass.mid filter=lfs diff=lfs merge=lfs -text
+MIDI/kayla-guitar.mid filter=lfs diff=lfs merge=lfs -text
+MIDI/kayla.mid filter=lfs diff=lfs merge=lfs -text
